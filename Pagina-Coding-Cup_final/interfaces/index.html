@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Cup</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos-index.css">
+    <link rel="stylesheet" href="css/estilos_Barra.css">
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg " style="background-color: #071a83;" data-bs-theme="dark">
+        <div class="container-fluid">
+            <nav class="navbar">
+              <div class="container-nav" style="background-color: #071a83;">                  
+                  <img src="src/CCUP.png" alt="Bootstrap" width="50" height="35" style="background-color: #071a83;" role="img">
+                </a>
+              </div>
+          </nav>
+            <label class="navbar-brand">Coding Cup</label>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <form class="d-flex">
+                <button type="button" class="btn btn-light m-1" data-bs-toggle="modal" data-bs-target="#ModalForm">
+                    Iniciar Sesión
+                </button>
+                
+                <button type="button" class="btn btn-light m-1" data-bs-toggle="modal" id="btnRegistrar">
+                    Registrarse
+                </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="nav">
+        <img src="src/Secretaria.png" height="50" class="img-nav-1">
+        <img src="src/gto.png" height="50" class="img-nav-2">
+        <img src="src/tec.png" height="50" class="img-nav-3">
+        <img src="src/itsur.png" height="50" class="img-nav-4">
+      </nav>
+
+      <!--Carrusel-->
+      <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel" >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="src/Coding CUP f 1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="src/Coding CUP f 1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="src/Coding CUP f 1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="card mb-3 m-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="src/img-tarjeta.png" class="img-fluid rounded-start" alt="Codign Cup 2023">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Convocatorias</h5>
+              <p class="card-text">Coding Cup GTO Edición-2023</p>
+              <p class="card-text"><small class="text-body-secondary">Ultima actualización hace 2 días </small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Login-->
+      <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="myform form">
+                        <img src="src/CCUP.png" class="rounded mx-auto d-block m-3" width="42" height="36">
+                        <h1 class="text-center">Iniciar Sesión</h1>
+
+
+
+                        <form form action="procesarInicio.php" method="post" name="login">
+                          
+                          <div class="form-group mb-4">
+                              <label for="exampleInputEmail1">Correo Electrónico</label>
+                              <input type="email" name="correo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu Correo Electrónico">
+                          </div>
+                          <div class="form-group mb-4">
+                              <label for="exampleInputEmail1">Contraseña</label>
+                              <input type="password" name="password" id="exampleInputPassword1" class="form-control" aria-describedby="emailHelp" placeholder="Ingresa tu Contraseña">
+                          </div>
+                          <div class="d-grid gap-2">
+                              <button class="btn btn-dark" id="btnEntrar">Iniciar Sesión</button>
+                            </div>
+
+
+                              
+                            <p>¿No tienes una cuenta? <a href="couch\registroCoach.php" style="text-decoration: underline;"> Registrate</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Barra de redes sociales-->
+    <div class="sticky-container colored-icons">
+        <ul class="sticky">
+          <li>
+            <img src="src/facebook.png" width="35" height="35">
+            <a href="" title="Conectar con Facebook" data-tag="Conectar con Facebook" onclick="window.open(this.href, this.target, 'width=770,height=368'); return false;" style="color: black;">
+            Facebook</a>
+          </li>
+        
+          <li>
+            <img src="src/x-removebg-preview (1).png" width="40" height="40">
+            <a href="" title="Conectar con X" data-tag="Conectar con X" onclick="window.open(this.href, this.target, 'width=770,height=368'); return false;" style="color: black;">
+            X</a>
+          </li>     
+
+          <li>
+            <img src="src/instagram (1).png" width="35" height="35">
+            <a href="" title="Conectar con Instagram" data-tag="Conectar con Instagram" onclick="window.open(this.href, this.target, 'width=770,height=368'); return false;" style="color: black;">
+            Instagram</a>
+          </li> 
+
+        </ul>
+      </div>
+
+      
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/funciones_login.js"></script>
+</body>
+</html>

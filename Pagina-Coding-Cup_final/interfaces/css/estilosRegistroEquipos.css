@@ -1,0 +1,39 @@
+form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.botones{
+    text-align: center;
+}
+
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+span{
+    display: none;
+}
+
+.archivo-center{
+    margin-top: 5px;
+}
+
+button{
+    width: 150px;
+}
+
+.equipo-img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+nav{
+    color: white;
+}

@@ -1,0 +1,22 @@
+.sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:230px;
+    width:210px;
+    z-index: 1100;
+}
+.sticky li{    border-radius: 8px; margin-top: 2px;list-style-type:none;background-color:#fff;color:#efefef;height:38px;padding:0px;margin:0px 0px 2px 0px;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out;cursor:pointer;}
+.sticky li:hover{ margin-left:-95px;}
+.sticky li img{ float:left;}
+.sticky li p{padding-top:5px;margin:0px;line-height:16px;font-size:small;display: inline-block;}
+.sticky li p a{text-decoration:none;color:#2C3539;}
+.sticky li p a:hover{ text-decoration:underline;}
+.social-icons a {padding: 6px 8px; display:inline-block;}
+.social-icons.big-icons a{font-size:28px; padding-left: 12px; padding-right: 12px;}
+.social-icons.bigger-icons a{font-size:38px;padding-left: 14px;padding-right: 14px;}
+.social-icons a:hover { text-decoration: none !important; }
+.colored-icons .link-vk, .link-vk:hover{ color:#5181B8; }
+.colored-icons .link-facebook, .link-facebook:hover{ color:#3b5998; }
+.colored-icons .link-twitter, .link-twitter:hover{ color:#1da1f2; }

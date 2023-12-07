@@ -1,0 +1,23 @@
+.container{
+    margin-top: 20px;
+    width: 100%;
+    padding: 0;
+}
+
+.container button{
+    margin-bottom: 10px;
+
+}
+
+table{
+    margin-top: 10px;
+}
+
+.centrar-opciones{
+    text-align: center;
+    width: 420px;
+}
+
+.centrar-opciones button{
+    margin-left: 5px;
+}
